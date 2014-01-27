@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Miles of Railroad per State per 1,000 Sq. Miles</title>
+  <style>
+  body {
+    margin: 10px;
+    padding: 0px;
+  }
+
+  #geo-map {
+      margin: 10px;
+      height: 500px;
+      border: solid black 1px;
+  }
+
+  .state:hover {
+      opacity: 1.0;
+  }
+  </style>
+</head>
+<body>
+  <h1>Miles of Railroad per State per 1,000 Sq. Miles</h1>
+  <div id="geo-map">
+    <svg></svg>
+  </div>
+  <h2>About</h2>
+  <p>I wanted to explore the relationship between states and the railroads in them. For each state, I've acquired the number of miles of railroad in it and also the number of square miles it takes up.
+  To compare the data in an appropriate way, I've normalized it by dividing the number of miles of railroad in the state by the number of square miles and then multiplied it by one thousand. This gives us a normalized value of "miles of railroad per 1,000 square miles of area".
+  Each state is then colored based on a linear color scale given its miles of railroad per 1,000 square miles of area.
+  Finally, I found a geofile for all railroads in the USA and drew them on the map as well.</p>
+  <h2>Data</h2>
+  <table id="geo-table" border="1">
+  </table>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.1.6/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.4/queue.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/spin.js/1.2.7/spin.min.js"></script>
+  <script>
+    // Add a spinner
+    var target = document.getElementById('geo-map');
+    var spinner = new Spinner().spin(target);
+
+    // Map dimensions
+    var width = 900;
+    var height = 500;
+
+    // Map projection
+    var mapXY = d3.geo.albersUsa();
+    var path = d3.geo.path().projection(mapXY);
+
+    // Some handy groups for referencing later
+    var stateGroup = d3.select("#geo-map svg").append("g");
+    var railroadGroup = d3.select("#geo-map svg").append("g");
+    // var centroidGroup = d3.select("#geo-map svg").append("g");
+
+    // Queue up our json loads so they're both ready simultaneously
+    queue()
+        .defer(d3.json, "data/us_states.geojson")
+        .defer(d3.json, "data/state_counts.json")
+        .defer(d3.json, "data/railroads.topojson")
+        .awaitAll(visualize);
+
+    function visualize (error, data) {
+        // A hash for count per state
+        var countPerState = d3.map();
+
+        // Add each state's count to our hash
+        data[1].forEach(function (d){
+          countPerState.set(d.id, Math.round((d.miles_of_rail / d.square_miles) * 1000));
+        });
+
+        // A color scale for our states
+        var color = d3.scale.linear()
+            .domain([d3.min(countPerState.values()), d3.max(countPerState.values())])
+            .range(["#FFF7FB","#034E7B"]);
+
+        // Draw states
+        stateGroup.selectAll("path")
+            .data(data[0].features)
+        .enter()
+            .insert("path")
+            .attr("d", path)
+            .attr("class", "state")
+            .attr("fill", function (d) { return color(countPerState.get(d.id)); })
+            .attr("stroke", "gray")
+            .attr("opacity", 0.7);
+
+        // Draw railroads
+        railroadGroup.selectAll("path")
+            // .data(data[2].features)
+            .data(topojson.feature(data[2], data[2].objects.railroads).features)
+        .enter()
+            .insert("path")
+            .attr("d", path)
+            .attr("class", "railroad")
+            .attr("fill", "none")
+            .attr("stroke", "gray")
+            .attr("opacity", 0.4);
+
+        // Fill out railroad data table
+        $("#geo-table").append("<tr><th>State</th><th>Sq. Miles</th><th>Miles of Railroad</th><th>Miles of Railroad per 1,000 sq. mi.</th></tr>")
+        data[1].forEach(function (d) {
+          var row = $('<tr><td>' + d.name +'</td><td>' + d.square_miles +'</td><td>' + d.miles_of_rail +'</td><td>' + Math.round((d.miles_of_rail / d.square_miles) * 1000) + '</td></tr>');
+          $("#geo-table").append(row);
+        });
+
+        // Stop our spinner
+        spinner.stop()
+    };
+  </script>
+</body>
+</html>

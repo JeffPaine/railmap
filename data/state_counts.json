@@ -1,0 +1,470 @@
+[
+  {
+    "id": "01",
+    "name": "Alabama",
+    "count": 641,
+    "abbreviation": "AL",
+    "population": 4447100,
+    "square_miles": 51718,
+    "miles_of_rail": 3255
+  },
+  {
+    "id": "02",
+    "name": "Alaska",
+    "count": 944,
+    "abbreviation": "AK",
+    "population": 626932,
+    "square_miles": 587878,
+    "miles_of_rail": 506
+  },
+  {
+    "id": "04",
+    "name": "Arizona",
+    "count": 325,
+    "abbreviation": "AZ",
+    "population": 5130632,
+    "square_miles": 114007,
+    "miles_of_rail": 1645
+  },
+  {
+    "id": "05",
+    "name": "Arkansas",
+    "count": 31,
+    "abbreviation": "AR",
+    "population": 2673400,
+    "square_miles": 53183,
+    "miles_of_rail": 2698
+  },
+  {
+    "id": "06",
+    "name": "California",
+    "count": 55,
+    "abbreviation": "CA",
+    "population": 33871648,
+    "square_miles": 158648,
+    "miles_of_rail": 5327
+  },
+  {
+    "id": "08",
+    "name": "Colorado",
+    "count": 614,
+    "abbreviation": "CO",
+    "population": 4301261,
+    "square_miles": 104100,
+    "miles_of_rail": 2667
+  },
+  {
+    "id": "09",
+    "name": "Connecticut",
+    "count": 765,
+    "abbreviation": "CT",
+    "population": 3405565,
+    "square_miles": 5006,
+    "miles_of_rail": 364
+  },
+  {
+    "id": "10",
+    "name": "Delaware",
+    "count": 882,
+    "abbreviation": "DE",
+    "population": 783600,
+    "square_miles": 2026,
+    "miles_of_rail": 250
+  },
+  {
+    "id": "11",
+    "name": "District of Columbia",
+    "count": 546,
+    "abbreviation": "DC",
+    "population": 572059,
+    "square_miles": 68,
+    "miles_of_rail": 23
+  },
+  {
+    "id": "12",
+    "name": "Florida",
+    "count": 10,
+    "abbreviation": "FL",
+    "population": 15982378,
+    "square_miles": 58681,
+    "miles_of_rail": 2902
+  },
+  {
+    "id": "13",
+    "name": "Georgia",
+    "count": 458,
+    "abbreviation": "GA",
+    "population": 8186453,
+    "square_miles": 58390,
+    "miles_of_rail": 4666
+  },
+  {
+    "id": "15",
+    "name": "Hawaii",
+    "count": 774,
+    "abbreviation": "HI",
+    "population": 1211537,
+    "square_miles": 6459,
+    "miles_of_rail": 0
+  },
+  {
+    "id": "16",
+    "name": "Idaho",
+    "count": 254,
+    "abbreviation": "ID",
+    "population": 1293953,
+    "square_miles": 83574,
+    "miles_of_rail": 1622
+  },
+  {
+    "id": "17",
+    "name": "Illinois",
+    "count": 134,
+    "abbreviation": "IL",
+    "population": 12419293,
+    "square_miles": 56343,
+    "miles_of_rail": 7027
+  },
+  {
+    "id": "18",
+    "name": "Indiana",
+    "count": 710,
+    "abbreviation": "IN",
+    "population": 6080485,
+    "square_miles": 36185,
+    "miles_of_rail": 4273
+  },
+  {
+    "id": "19",
+    "name": "Iowa",
+    "count": 471,
+    "abbreviation": "IA",
+    "population": 2926324,
+    "square_miles": 56276,
+    "miles_of_rail": 3855
+  },
+  {
+    "id": "20",
+    "name": "Kansas",
+    "count": 798,
+    "abbreviation": "KS",
+    "population": 2688418,
+    "square_miles": 82282,
+    "miles_of_rail": 4855
+  },
+  {
+    "id": "21",
+    "name": "Kentucky",
+    "count": 662,
+    "abbreviation": "KY",
+    "population": 4041769,
+    "square_miles": 40411,
+    "miles_of_rail": 2562
+  },
+  {
+    "id": "22",
+    "name": "Louisiana",
+    "count": 839,
+    "abbreviation": "LA",
+    "population": 4468976,
+    "square_miles": 47720,
+    "miles_of_rail": 2912
+  },
+  {
+    "id": "23",
+    "name": "Maine",
+    "count": 60,
+    "abbreviation": "ME",
+    "population": 1274923,
+    "square_miles": 33128,
+    "miles_of_rail": 1116
+  },
+  {
+    "id": "24",
+    "name": "Maryland",
+    "count": 963,
+    "abbreviation": "MD",
+    "population": 5296486,
+    "square_miles": 10455,
+    "miles_of_rail": 762
+  },
+  {
+    "id": "25",
+    "name": "Massachusetts",
+    "count": 905,
+    "abbreviation": "MA",
+    "population": 6349097,
+    "square_miles": 8262,
+    "miles_of_rail": 892
+  },
+  {
+    "id": "26",
+    "name": "Michigan",
+    "count": 290,
+    "abbreviation": "MI",
+    "population": 9938444,
+    "square_miles": 58513,
+    "miles_of_rail": 3632
+  },
+  {
+    "id": "27",
+    "name": "Minnesota",
+    "count": 160,
+    "abbreviation": "MN",
+    "population": 4919479,
+    "square_miles": 84397,
+    "miles_of_rail": 4449
+  },
+  {
+    "id": "28",
+    "name": "Mississippi",
+    "count": 975,
+    "abbreviation": "MS",
+    "population": 2844658,
+    "square_miles": 47695,
+    "miles_of_rail": 2432
+  },
+  {
+    "id": "29",
+    "name": "Missouri",
+    "count": 624,
+    "abbreviation": "MO",
+    "population": 5595211,
+    "square_miles": 69709,
+    "miles_of_rail": 3958
+  },
+  {
+    "id": "30",
+    "name": "Montana",
+    "count": 19,
+    "abbreviation": "MT",
+    "population": 902195,
+    "square_miles": 147047,
+    "miles_of_rail": 3172
+  },
+  {
+    "id": "31",
+    "name": "Nebraska",
+    "count": 966,
+    "abbreviation": "NE",
+    "population": 1711263,
+    "square_miles": 77359,
+    "miles_of_rail": 3247
+  },
+  {
+    "id": "32",
+    "name": "Nevada",
+    "count": 773,
+    "abbreviation": "NV",
+    "population": 1998257,
+    "square_miles": 110567,
+    "miles_of_rail": 1192
+  },
+  {
+    "id": "33",
+    "name": "New Hampshire",
+    "count": 666,
+    "abbreviation": "NH",
+    "population": 1235786,
+    "square_miles": 9283,
+    "miles_of_rail": 344
+  },
+  {
+    "id": "34",
+    "name": "New Jersey",
+    "count": 631,
+    "abbreviation": "NJ",
+    "population": 8414350,
+    "square_miles": 7790,
+    "miles_of_rail": 983
+  },
+  {
+    "id": "35",
+    "name": "New Mexico",
+    "count": 208,
+    "abbreviation": "NM",
+    "population": 1819046,
+    "square_miles": 121599,
+    "miles_of_rail": 1835
+  },
+  {
+    "id": "36",
+    "name": "New York",
+    "count": 63,
+    "abbreviation": "NY",
+    "population": 18976457,
+    "square_miles": 49112,
+    "miles_of_rail": 3532
+  },
+  {
+    "id": "37",
+    "name": "North Carolina",
+    "count": 190,
+    "abbreviation": "NC",
+    "population": 8049313,
+    "square_miles": 52672,
+    "miles_of_rail": 3245
+  },
+  {
+    "id": "38",
+    "name": "North Dakota",
+    "count": 675,
+    "abbreviation": "ND",
+    "population": 642200,
+    "square_miles": 70704,
+    "miles_of_rail": 3328
+  },
+  {
+    "id": "39",
+    "name": "Ohio",
+    "count": 98,
+    "abbreviation": "OH",
+    "population": 11353140,
+    "square_miles": 41328,
+    "miles_of_rail": 5338
+  },
+  {
+    "id": "40",
+    "name": "Oklahoma",
+    "count": 932,
+    "abbreviation": "OK",
+    "population": 3450654,
+    "square_miles": 69903,
+    "miles_of_rail": 3273
+  },
+  {
+    "id": "41",
+    "name": "Oregon",
+    "count": 634,
+    "abbreviation": "OR",
+    "population": 3421399,
+    "square_miles": 97052,
+    "miles_of_rail": 2396
+  },
+  {
+    "id": "42",
+    "name": "Pennsylvania",
+    "count": 907,
+    "abbreviation": "PA",
+    "population": 12281054,
+    "square_miles": 45310,
+    "miles_of_rail": 5127
+  },
+  {
+    "id": "44",
+    "name": "Rhode Island",
+    "count": 414,
+    "abbreviation": "RI",
+    "population": 1048319,
+    "square_miles": 1213,
+    "miles_of_rail": 19
+  },
+  {
+    "id": "45",
+    "name": "South Carolina",
+    "count": 312,
+    "abbreviation": "SC",
+    "population": 4012012,
+    "square_miles": 31117,
+    "miles_of_rail": 2292
+  },
+  {
+    "id": "46",
+    "name": "South Dakota",
+    "count": 773,
+    "abbreviation": "SD",
+    "population": 754844,
+    "square_miles": 77122,
+    "miles_of_rail": 1754
+  },
+  {
+    "id": "47",
+    "name": "Tennessee",
+    "count": 486,
+    "abbreviation": "TN",
+    "population": 5689283,
+    "square_miles": 42146,
+    "miles_of_rail": 2651
+  },
+  {
+    "id": "48",
+    "name": "Texas",
+    "count": 200,
+    "abbreviation": "TX",
+    "population": 20851820,
+    "square_miles": 266874,
+    "miles_of_rail": 10425
+  },
+  {
+    "id": "49",
+    "name": "Utah",
+    "count": 430,
+    "abbreviation": "UT",
+    "population": 2233169,
+    "square_miles": 84905,
+    "miles_of_rail": 1343
+  },
+  {
+    "id": "50",
+    "name": "Vermont",
+    "count": 102,
+    "abbreviation": "VT",
+    "population": 608827,
+    "square_miles": 9615,
+    "miles_of_rail": 590
+  },
+  {
+    "id": "51",
+    "name": "Virginia",
+    "count": 79,
+    "abbreviation": "VA",
+    "population": 7078515,
+    "square_miles": 40598,
+    "miles_of_rail": 3214
+  },
+  {
+    "id": "53",
+    "name": "Washington",
+    "count": 245,
+    "abbreviation": "WA",
+    "population": 5894121,
+    "square_miles": 68126,
+    "miles_of_rail": 3157
+  },
+  {
+    "id": "54",
+    "name": "West Virginia",
+    "count": 169,
+    "abbreviation": "WV",
+    "population": 1808344,
+    "square_miles": 24231,
+    "miles_of_rail": 2213
+  },
+  {
+    "id": "55",
+    "name": "Wisconsin",
+    "count": 345,
+    "abbreviation": "WI",
+    "population": 5363675,
+    "square_miles": 56145,
+    "miles_of_rail": 3385
+  },
+  {
+    "id": "56",
+    "name": "Wyoming",
+    "count": 836,
+    "abbreviation": "WY",
+    "population": 493782,
+    "square_miles": 97818,
+    "miles_of_rail": 1860
+  },
+  {
+    "id": "72",
+    "name": "Puerto Rico",
+    "count": 159,
+    "abbreviation": "PR",
+    "population": 3808610,
+    "square_miles": 3435,
+    "miles_of_rail": 0
+  }
+]
